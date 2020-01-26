@@ -2,14 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <title>Pig Latin Translator</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Pig Latin Translator!</h1>
     <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <div id="display-element">
+      
+      <input id="translate" type="text" placeholder="Enter word here">
+      <!-- <button onclick="pigLatin()">Submit</button> -->
+      <button onclick="document.getElementById('output').textContent=pigLatin(document.getElementById('translate').value)">Submit</button>
+    </div>
     <hr/>
+    
+    <div id="output">
+    </div>
+    
+    
+    <script src="main.js"></script>
   </body>
 </html>
